@@ -35,4 +35,14 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  it("should return false if the word is not present", function() {
+    const result = wordSearch([], 'FRANK')
+
+    assert.isFalse(result);
+  });
+  it("should return false if the word is not present", function() {
+    const result = wordSearch(["oo"], 'FRANK')
+
+    assert.isFalse(result);
+  });
 });
